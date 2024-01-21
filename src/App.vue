@@ -2,9 +2,9 @@
   <div class="container pt-5">
     <div class="row">
       <div class="col-md-6">
-        <div class="progress mb-3" role="progressbar" aria-label="Example 20px high" :aria-valuenow="step/2*100" aria-valuemin="0"
+        <div class="progress mb-3" role="progressbar" aria-label="Example 20px high" :aria-valuenow="step/3*100" aria-valuemin="0"
           aria-valuemax="100" style="height: 20px">
-          <div class="progress-bar" :style="`width: ${step/2*100}%`"></div>
+          <div class="progress-bar" :style="`width: ${step/3*100}%`"></div>
         </div>
         <CharacterForm1 v-if="step === 0" @update:character-name="name => display(name)" @next="step++" />
         <CharacterForm2 v-if="step === 1" @update:race="race => displayRace(race)" @next="step++" @previous="step--"
