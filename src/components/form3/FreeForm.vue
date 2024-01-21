@@ -1,5 +1,5 @@
 <template>
-    <div class="container border bg-light py-2">
+    <div class="container bg-light border rounded border-primary py-2 my-3">
         <div>
             <span :class="currentPoints > 27 ? 'text-danger' : ''">{{ currentPoints }} / 27</span>
         </div>

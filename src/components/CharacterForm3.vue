@@ -1,7 +1,7 @@
 <template>
     <label class="form-label">Modification des caractéristiques</label>
 
-    <ul class="nav nav-tabs">
+    <ul class="nav nav-pills">
         <li class="nav-item">
             <a id="m-simple" @click="event => updateNav(event)" :class="`nav-link ${nav=='m-simple' ? 'active' : ''}`" href="#">Mode simplifié</a>
         </li>
@@ -34,7 +34,8 @@
 
 <script setup>
 import { useStore } from 'vuex';
-import { ref, defineEmits } from 'vue';
+/* eslint-disable no-unused-vars */
+import { defineEmits, computed, ref } from 'vue';
 import SimplifiedForm from './form3/SimplifiedForm.vue';
 import FreeForm from './form3/FreeForm.vue';
 //import ClassicForm from './form3/ClassicForm.vue';
@@ -44,11 +45,12 @@ import FormController from './FormController.vue';
 
 const emit = defineEmits(['next', 'previous'])
 
-const nav = ref("m-free");
+const nav = ref('m-simple')
 
 const updateNav = (event) => {
-    nav.value = event.target.id;
-}
+    //store.commit('form3/setForm3Mode', event.target.id);
+    nav.value = event.target.id;   
+}   
 
 /* eslint-disable no-unused-vars */
 const store = useStore();
