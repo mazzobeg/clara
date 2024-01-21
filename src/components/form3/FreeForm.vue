@@ -4,16 +4,13 @@
             <span :class="currentPoints > 27 ? 'text-danger' : ''">{{ currentPoints }} / 27</span>
         </div>
 
-        <div class="row border" v-for="(aV, aK, aI) in STUB" :key="aI">
-            <div class="col-2">
-                <button @click="decrement(aK)" class="btn btn-primary w-100">-</button>
-            </div>
-            <div class="col-8 text-center">{{ `${aV} (${results[aK]})` }}</div>
-            <div class="col-2">
-                <button @click="increment(aK)" class="btn btn-primary w-100">+</button>
+        <div class="my-2" v-for="(aV, aK, aI) in STUB" :key="aI">
+            <div class="d-flex justify-content-between">
+                <button @click="decrement(aK)" type="button" class="btn btn-outline-primary">-</button>
+                <span>{{ `${aV} (${results[aK]})` }}</span>
+                <button @click="increment(aK)" type="button" class="btn btn-outline-primary">+</button>
             </div>
         </div>
-
     </div>
 </template>
 
