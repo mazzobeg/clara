@@ -1,0 +1,218 @@
+{
+    "name": "races",
+    "elements": [
+        {
+            "key": "elfe",
+            "name": "Elfe",
+            "attributes": [
+                {
+                    "name" : "speed",
+                    "quantity": 9
+                }
+            ],
+            "skills": [
+                {
+                    "name": "perception",
+                    "quantity": 1
+                }
+            ],
+            "abilities": [
+                {
+                    "name": "dex",
+                    "quantity": 2
+                }
+            ],
+            "features": [
+                {
+                    "name": "Vision dans le noir"
+                },
+                {
+                    "name": "Ascendance féerique"
+                },
+                {
+                    "name": "Transe"
+                }
+            ],
+            "languages": [
+                {
+                    "name": "Elfe"
+                },
+                {
+                    "name": "Commun"
+                }
+            ],
+            "choices": {
+                "subRace": [
+                    {
+                        "id": 1,
+                        "values": [
+                            {
+                                "key": "hautElfe",
+                                "name": "Haut-elfe",
+                                "abilities": [
+                                    {
+                                        "name": "int",
+                                        "quantity": 1
+                                    }
+                                ],
+                                "masterings": [
+                                    {
+                                        "name": "Epée longue"
+                                    },
+                                    {
+                                        "name": "Epée courte"
+                                    },
+                                    {
+                                        "name": "Arc long"
+                                    },
+                                    {
+                                        "name": "Arc court"
+                                    }
+                                ]
+                            },
+                            {
+                                "key": "elfeDesBois",
+                                "name": "Elfe des bois",
+                                "abilities": [
+                                    {
+                                        "name": "wis",
+                                        "quantity": 1
+                                    }
+                                ],
+                                "masterings": [
+                                    {
+                                        "name": "Epée longue"
+                                    },
+                                    {
+                                        "name": "Epée courte"
+                                    },
+                                    {
+                                        "name": "Arc long"
+                                    },
+                                    {
+                                        "name": "Arc court"
+                                    }
+                                ],
+                                "spells": [
+                                    {
+                                        "name": "Cachette naturelle"
+                                    }
+                                ]
+                            },
+                            {
+                                "key": "elfeNoir",
+                                "name": "Elfe noir",
+                                "abilities": [
+                                    {
+                                        "name": "cha",
+                                        "quantity": 1
+                                    }
+                                ],
+                                "features": [
+                                    {
+                                        "name": "Vision dans le noir supérieure"
+                                    },
+                                    {
+                                        "name": "Sensibilité au soleil"
+                                    }
+                                ],
+                                "spells": [
+                                    {
+                                        "name": "Lumière dansante"
+                                    }
+                                ],
+                                "masterings": [
+                                    {
+                                        "name": "Rapière"
+                                    },
+                                    {
+                                        "name": "Epée courte"
+                                    },
+                                    {
+                                        "name": "Arbalète de poing"
+                                    }
+                                ]
+                            }
+                        ],
+                        "number": 1
+                    }
+                ]
+            }
+        },
+        {
+            "key": "halfelin",
+            "name": "Halfelin",
+            "attributes": [
+                {
+                    "name" : "speed",
+                    "quantity": 7.5
+                }
+            ],
+            "abilities": [
+                {
+                    "name": "dex",
+                    "quantity": 2
+                }
+            ],
+            "languages": [
+                {
+                    "name": "Halfelin"
+                },
+                {
+                    "name": "Commun"
+                }
+            ],
+            "features": [
+                {
+                    "name": "Chanceux"
+                },
+                {
+                    "name": "Brave"
+                },
+                {
+                    "name": "Agilité halfeline"
+                }
+            ],
+            "choices": {
+                "subRace": [
+                    {
+                        "id": 1,
+                        "values": [
+                            {
+                                "key": "piedsLegers",
+                                "name": "Pieds-légers",
+                                "abilities": [
+                                    {
+                                        "name": "cha",
+                                        "quantity": 1
+                                    }
+                                ],
+                                "features": [
+                                    {
+                                        "name": "Discrétion naturelle"
+                                    }
+                                ]
+                            },
+                            {
+                                "key": "robuste",
+                                "name": "Robuste",
+                                "abilities": [
+                                    {
+                                        "name": "con",
+                                        "quantity": 1
+                                    }
+                                ],
+                                "features": [
+                                    {
+                                        "name": "Résistance des robustes"
+                                    }
+                                ]
+                            }
+                        ],
+                        "number": 1
+                    }
+                ]
+            }
+        }
+    ]
+}

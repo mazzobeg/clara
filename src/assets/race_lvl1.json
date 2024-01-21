@@ -1,0 +1,79 @@
+{
+    "Elfe": {
+        "caractériques": {
+            "dex": 2
+        },
+        "attributs": {
+            "speed": 9
+        },
+        "compétences": {
+            "perception": 1
+        },
+        "traits": [
+            "Vision dans le noir",
+            "Ascendance féerique",
+            "Transe"
+        ],
+        "langues": [
+            "Commun",
+            "Elfe"
+        ],
+        "choices" : {
+            "sous_race" : {
+                "1": {
+                    "values": [
+                        "Elfe des bois",
+                        "Haut-elfe",
+                        "Elfe noir"
+                    ],
+                    "number": 1
+                }
+            }
+        }        
+    },
+    "Halfelin": {
+        "caractériques": {
+            "dex": 2
+        },
+        "attributs": {
+            "speed": 7.5
+        },
+        "traits": [
+            "Chanceux",
+            "Brave",
+            "Agilité halfeline"
+        ],
+        "langues": [
+            "Commun",
+            "Halfelin"
+        ],
+        "choices": {
+            "sous_race": {
+                "1": {
+                    "values": [
+                        "Pieds-légers",
+                        "Robuste"
+                    ],
+                    "number": 1
+                }
+            }
+        }
+        
+    },
+    "Humain": {
+        "caractériques": {
+            "dex": 1,
+            "for": 1,
+            "cha": 1,
+            "con": 1,
+            "int": 1,
+            "sag": 1
+        },
+        "attributs": {
+            "speed": 9
+        },
+        "traits": [
+            "Langues supplémentaires"
+        ]
+    }
+}

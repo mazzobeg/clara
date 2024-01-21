@@ -1,0 +1,112 @@
+{
+    "classes": [
+        {
+            "key": "barbare",
+            "name": "Barbare",
+            "attributes": [
+                {
+                    "name": "dv",
+                    "quantity": 12
+                },
+                {
+                    "name": "pv",
+                    "quantity": 12
+                },
+                {
+                    "name": "bonus_maitrise",
+                    "quantity": 2
+                },
+                {
+                    "name": "ca",
+                    "quantity": 0
+                },
+                {
+                    "name": "speed",
+                    "quantity": 0
+                },
+                {
+                    "name": "init",
+                    "quantity": 0
+                },
+                {
+                    "name": "temp_life",
+                    "quantity": 0
+                }
+            ],
+            "maitrise": [
+                {
+                    "name" : "Armure légère"
+                },
+                {
+                    "name" : "Armure intermédiaire"
+                },
+                {
+                    "name" : "Bouclier"
+                },
+                {
+                    "name" : "Armes courantes"
+                },
+                {
+                    "name" : "Armes de guerre"
+                }
+            ],       
+            "sauvegarde": [
+                {
+                    "name": "Force"
+                },
+                {
+                    "name": "Constitution"
+                
+                }
+            ],
+            "skills" : [],
+            "items" : [],
+            "features": [
+                {
+                    "name"  : "Rage"
+                },
+                {
+                    "name"  : "Défense sans armure"
+                }
+            ],
+            "choices": {
+                "skills": {
+                    "1": {
+                        "values": [
+                            "Athlétisme",
+                            "Dressage",
+                            "Intimidation",
+                            "Nature",
+                            "Perception",
+                            "Survie"
+                        ],
+                        "number": "2"
+                    }
+                },
+                "équipement": {
+                    "1": {
+                        "values": [
+                            "Hache à deux mains",
+                            "Arme de guerre au CàC au choix"
+                        ],
+                        "number": "1"
+                    },
+                    "2": {
+                        "values": [
+                            "2 hachettes",
+                            "Arme courante au choix"
+                        ],
+                        "number": "1"
+                    },
+                    "3": {
+                        "values": [
+                            "Kit d'explorateur",
+                            "4 javelines"
+                        ],
+                        "number": "1"
+                    }
+                }
+            }
+        }
+    ]
+}

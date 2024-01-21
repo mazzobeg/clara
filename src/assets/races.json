@@ -1,0 +1,58 @@
+{
+    "races": [
+        {
+            "key": "elfe",
+            "name": "Elfe",
+            "caracteristics": [
+                {
+                    "name": "dex",
+                    "quantity": 2
+                }
+            ],
+            "skills": [
+                {
+                    "name": "perception",
+                    "quantity": 1
+                }
+            ],
+            "features": [
+                {
+                    "name": "Vision dans le noir"
+                },
+                {
+                    "name": "Ascendance féerique"
+                },
+                {
+                    "name": "Transe"
+                }
+            ],
+            "languages": [
+                {
+                    "name": "Commun"
+                },
+                {
+                    "name": "Elfique"
+                }
+            ],
+            "choices": {
+                "sub_class": [
+                    {
+                        "id": 1,
+                        "number": 1,
+                        "values": [
+                            {
+                                "name": "Elfe des bois"
+                            },
+                            {
+                                "name": "Haut-elfe"
+                            },
+                            {
+                                "name": "Elfe noir"
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

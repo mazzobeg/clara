@@ -1,0 +1,74 @@
+{
+    "acrobatics" : {
+        "name" : "Acrobaties",
+        "caracteristic" : "dex"
+    },
+    "animal_handling" : {
+        "name" : "Dressage",
+        "caracteristic" : "wis"
+    },
+    "arcana" : {
+        "name" : "Arcanes",
+        "caracteristic" : "int"
+    },
+    "athletics" : {
+        "name" : "Athlétisme",
+        "caracteristic" : "str"
+    },
+    "deception" : {
+        "name" : "Tromperie",
+        "caracteristic" : "cha"
+    },
+    "history" : {
+        "name" : "Histoire",
+        "caracteristic" : "int"
+    },
+    "insight" : {
+        "name" : "Intuition",
+        "caracteristic" : "wis"
+    },
+    "intimidation" : {
+        "name" : "Intimidation",
+        "caracteristic" : "cha"
+    },
+    "investigation" : {
+        "name" : "Investigation",
+        "caracteristic" : "int"
+    },
+    "medicine" : {
+        "name" : "Médecine",
+        "caracteristic" : "wis"
+    },
+    "nature" : {
+        "name" : "Nature",
+        "caracteristic" : "int"
+    },
+    "perception" : {
+        "name" : "Perception",
+        "caracteristic" : "wis"
+    },
+    "performance" : {
+        "name" : "Performance",
+        "caracteristic" : "cha"
+    },
+    "persuasion" : {
+        "name" : "Persuasion",
+        "caracteristic" : "cha"
+    },
+    "religion" : {
+        "name" : "Religion",
+        "caracteristic" : "int"
+    },
+    "sleight_of_hand" : {
+        "name" : "Prestidigitation",
+        "caracteristic" : "dex"
+    },
+    "stealth" : {
+        "name" : "Discrétion",
+        "caracteristic" : "dex"
+    },
+    "survival" : {
+        "name" : "Survie",
+        "caracteristic" : "wis"
+    }
+}

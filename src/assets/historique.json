@@ -1,0 +1,36 @@
+{
+    "acolyte" : {
+        "name" : "Acolyte",
+        "skills" : {
+            "intuition" : 1,
+            "religion" : 1
+        },
+        "items": ["Symbole sacré", "Livre de prières", "5 bâtons d'encens", "Habits de cérémonie", "Vêtements communs", "Bourse contenant 15 po"],
+        "capacities" : ["Abri du fidèle"],
+        "choices": {
+            "languages" : {
+                "1" : {
+                    "values": ["Commun", "Elfique", "Géant", "Gnome", "Gobelin", "Halfelin", "Nain", "Orc"],
+                    "number" : 2
+                }
+            }
+        }
+    },
+    "artisan_de_guilde" : {
+        "name" : "Artisan de guilde",
+        "skills" : {
+            "intuition" : 1,
+            "persuasion" : 1
+        },
+        "items": ["Lettre de recommendation", "Vêtements de voyage", "Une bourse contenant 15 po"],
+        "capacities" : ["Membre de la guilde"],
+        "choices": {
+            "items" : {
+                "1" : {
+                    "values": ["Alchimiste", "Calligraphe", "Couturier", "Cuisinier", "Forgeron", "Maçon", "Musicien", "Peintre", "Potier", "Serrurier", "Tisserand"],
+                    "number" : 1
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,64 @@
+{
+    "Elfe": {
+        "Elfe des bois": {
+            "caractériques": {
+                "sagesse": 1
+            },
+            "sorts": [
+                "Cachette naturelle"
+            ],
+            "maitrises": [
+                "Epée longue",
+                "Epée courte",
+                "Arc long",
+                "Arc court"
+            ]
+        },
+        "Haut-elfe": {
+            "caractériques": {
+                "intelligence": 1
+            },
+            "maitrises": [
+                "Epée longue",
+                "Epée courte",
+                "Arc long",
+                "Arc court"
+            ]
+        },
+        "Elfe noir": {
+            "caractériques": {
+                "charisme": 1
+            },
+            "traits": [
+                "Vision dans le noir supérieure",
+                "Sensibilité au soleil"
+            ],
+            "sorts": [
+                "Lumière dansante"
+            ],
+            "maitrises": [
+                "Rapière",
+                "Epée courte",
+                "Arbalètes de poing"
+            ]
+        }
+    },
+    "Halfelin": {
+        "Pieds-légers": {
+            "caractériques": {
+                "charisme": 1
+            },
+            "compétences": [
+                "Discrétion naturelle"
+            ]
+        },
+        "Robuste": {
+            "caractériques": {
+                "constitution": 1
+            },
+            "traits": [
+                "Résistance des robustes"
+            ]
+        }
+    }
+}

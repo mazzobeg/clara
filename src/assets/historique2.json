@@ -1,0 +1,180 @@
+{
+    "backgrounds": [
+        {
+            "key": "acolyte",
+            "name": "Acolyte",
+            "attributes" : [
+                {
+                    "name": "dv",
+                    "quantity": 0
+                },
+                {
+                    "name": "pv",
+                    "quantity": 0
+                },
+                {
+                    "name": "bonus_maitrise",
+                    "quantity": 0
+                },
+                {
+                    "name": "ca",
+                    "quantity": 0
+                },
+                {
+                    "name": "speed",
+                    "quantity": 0
+                },
+                {
+                    "name": "init",
+                    "quantity": 0
+                },
+                {
+                    "name": "temp_life",
+                    "quantity": 0
+                }
+            ],
+            "maitrise" : [],
+            "sauvegarde" : [],
+            "skills": [
+                {
+                    "name": "insight",
+                    "quantity": 1
+                },
+                {
+                    "name": "religion",
+                    "quantity": 1
+                }
+            ],
+            "items": [
+                {
+                    "name": "Symbole sacré"
+                },
+                {
+                    "name": "Livre de prières"
+                },
+                {
+                    "name": "5 bâtons d'encens"
+                },
+                {
+                    "name": "Habits de cérémonie"
+                },
+                {
+                    "name": "Vêtements communs"
+                },
+                {
+                    "name": "Bourse contenant 15 po"
+                }
+            ],
+            "features": [
+                {
+                    "name": "Abri du fidèle"
+                }
+            ],
+            "choices": {
+                "languages": [
+                    {
+                        "id" : 1,
+                        "values": [
+                            {
+                                "name": "Commun"
+                            },
+                            {
+                                "name": "Elfique"
+                            },
+                            {
+                                "name": "Nain"
+                            },
+                            {
+                                "name": "Halfelin"
+                            },
+                            {
+                                "name": "Orc"
+                            }
+                        ],
+                        "number": 2
+                    }
+                ],
+                "skills" : [],
+                "items": [],
+                "sub_class" : []
+            }
+        },
+        {
+            "key": "acolyte2",
+            "name": "Acolyte2",
+            "attributes" : [
+                {
+                    "name": "dv",
+                    "quantity": 0
+                },
+                {
+                    "name": "pv",
+                    "quantity": 0
+                },
+                {
+                    "name": "bonus_maitrise",
+                    "quantity": 0
+                },
+                {
+                    "name": "ca",
+                    "quantity": 0
+                },
+                {
+                    "name": "speed",
+                    "quantity": 0
+                },
+                {
+                    "name": "init",
+                    "quantity": 0
+                },
+                {
+                    "name": "temp_life",
+                    "quantity": 0
+                }
+            ],
+            "maitrise" : [],
+            "sauvegarde" : [],
+            "skills": [
+                {
+                    "name": "acrobatics",
+                    "quantity": 1
+                },
+                {
+                    "name": "arcana",
+                    "quantity": 1
+                }
+            ],
+            "items": [
+                {
+                    "name": "Symbole sacré"
+                },
+                {
+                    "name": "Livre de prières"
+                },
+                {
+                    "name": "5 bâtons d'encens"
+                },
+                {
+                    "name": "Habits de cérémonie"
+                },
+                {
+                    "name": "Vêtements communs"
+                },
+                {
+                    "name": "Bourse contenant 15 po"
+                }
+            ],
+            "features": [
+                {
+                    "name": "Abri du fidèle"
+                }
+            ],
+            "choices": {
+                "languages": [],
+                "skills" : [],
+                "items": [],
+                "sub_class" : []
+            }
+        }
+    ]
+}

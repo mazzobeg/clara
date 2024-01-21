@@ -1,0 +1,69 @@
+{
+    "name": "backgrounds",
+    "elements" : [
+        {
+            "key": "acolyte",
+            "name": "Acolyte",
+            "skills": [
+                {
+                    "name": "insight",
+                    "quantity": 1
+                },
+                {
+                    "name": "religion",
+                    "quantity": 1
+                }
+            ],
+            "items": [
+                {
+                    "name": "Symbole sacré"
+                },
+                {
+                    "name": "Livre de prières"
+                },
+                {
+                    "name": "5 bâtons d'encens"
+                },
+                {
+                    "name": "Habits de cérémonie"
+                },
+                {
+                    "name": "Vêtements communs"
+                },
+                {
+                    "name": "Bourse contenant 15 po"
+                }
+            ],
+            "features": [
+                {
+                    "name": "Abri du fidèle"
+                }
+            ],
+            "choices": {
+                "languages": [
+                    {
+                        "id" : 1,
+                        "values": [
+                            {
+                                "name": "Commun"
+                            },
+                            {
+                                "name": "Elfique"
+                            },
+                            {
+                                "name": "Nain"
+                            },
+                            {
+                                "name": "Halfelin"
+                            },
+                            {
+                                "name": "Orc"
+                            }
+                        ],
+                        "number": 2
+                    }
+                ]
+            }
+        }
+    ]
+}

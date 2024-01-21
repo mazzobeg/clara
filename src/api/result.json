@@ -1,0 +1,457 @@
+{
+    "classes": [
+        {
+            "name": "Barbare",
+            "pv": {
+                "name": "health",
+                "quantity": 12
+            },
+            "dv": {
+                "name": "hit_dice",
+                "quantity": 12
+            },
+            "bonus_maitrise": {
+                "name": "mastering_bonus",
+                "quantity": 2
+            },
+            "maitrise": [
+                {
+                    "name": "Armure légère"
+                },
+                {
+                    "name": "Armure intermédiaire"
+                },
+                {
+                    "name": "Bouclier"
+                },
+                {
+                    "name": "Armes courantes"
+                },
+                {
+                    "name": "Armes de guerres"
+                }
+            ],
+            "sauvegarde": [
+                {
+                    "name": "strength"
+                },
+                {
+                    "name": "constitution"
+                }
+            ],
+            "features": [
+                {
+                    "name": "Rage"
+                },
+                {
+                    "name": "Défense sans armure"
+                }
+            ],
+            "items": [],
+            "choices": {
+                "skills": [
+                    {
+                        "id": 1,
+                        "values": [
+                            {
+                                "name": "athletics",
+                                "quantity": 1
+                            },
+                            {
+                                "name": "animal_handling",
+                                "quantity": 1
+                            },
+                            {
+                                "name": "intimidation",
+                                "quantity": 1
+                            },
+                            {
+                                "name": "nature",
+                                "quantity": 1
+                            },
+                            {
+                                "name": "perception",
+                                "quantity": 1
+                            },
+                            {
+                                "name": "survival",
+                                "quantity": 1
+                            }
+                        ],
+                        "number": 2
+                    }
+                ],
+                "items": [
+                    {
+                        "id": 1,
+                        "values": [
+                            {
+                                "name": "Hache à deux mains"
+                            },
+                            {
+                                "name": "Arme de guerre au CàC au choix"
+                            }
+                        ],
+                        "number": 1
+                    },
+                    {
+                        "id": 2,
+                        "values": [
+                            {
+                                "name": "Hachette x2"
+                            },
+                            {
+                                "name": "Arme courante au choix"
+                            }
+                        ],
+                        "number": 1
+                    },
+                    {
+                        "id": 3,
+                        "values": [
+                            {
+                                "name": "Kit d'explorateur"
+                            },
+                            {
+                                "name": "Javeline x4"
+                            }
+                        ],
+                        "number": 1
+                    }
+                ],
+                "sub_class": []
+            }
+        },
+        {
+            "name": "Barde",
+            "pv": {
+                "name": "health",
+                "quantity": 8
+            },
+            "dv": {
+                "name": "hit_dice",
+                "quantity": 8
+            },
+            "bonus_maitrise": {
+                "name": "mastering_bonus",
+                "quantity": 2
+            },
+            "maitrise": [
+                {
+                    "name": "Armure légère"
+                },
+                {
+                    "name": "Armes courantes"
+                },
+                {
+                    "name": "Arbalète de poing"
+                },
+                {
+                    "name": "Epée longue"
+                },
+                {
+                    "name": "Rapière"
+                }
+            ],
+            "sauvegarde": [
+                {
+                    "name": "dexterity"
+                },
+                {
+                    "name": "charisma"
+                }
+            ],
+            "features": [],
+            "items": [
+                {
+                    "name": "Armure de cuire"
+                },
+                {
+                    "name": "Dague"
+                }
+            ],
+            "choices": {
+                "skills": [
+                    {
+                        "id": 1,
+                        "values": [
+                            {
+                                "name": "acrobatics",
+                                "quantity": 1
+                            },
+                            {
+                                "name": "animal_handling",
+                                "quantity": 1
+                            },
+                            {
+                                "name": "arcana",
+                                "quantity": 1
+                            },
+                            {
+                                "name": "athletics",
+                                "quantity": 1
+                            },
+                            {
+                                "name": "deception",
+                                "quantity": 1
+                            },
+                            {
+                                "name": "history",
+                                "quantity": 1
+                            },
+                            {
+                                "name": "insight",
+                                "quantity": 1
+                            },
+                            {
+                                "name": "intimidation",
+                                "quantity": 1
+                            },
+                            {
+                                "name": "investigation",
+                                "quantity": 1
+                            },
+                            {
+                                "name": "medicine",
+                                "quantity": 1
+                            },
+                            {
+                                "name": "nature",
+                                "quantity": 1
+                            },
+                            {
+                                "name": "perception",
+                                "quantity": 1
+                            },
+                            {
+                                "name": "performance",
+                                "quantity": 1
+                            },
+                            {
+                                "name": "persuasion",
+                                "quantity": 1
+                            },
+                            {
+                                "name": "religion",
+                                "quantity": 1
+                            },
+                            {
+                                "name": "sleight_of_hand",
+                                "quantity": 1
+                            },
+                            {
+                                "name": "stealth",
+                                "quantity": 1
+                            },
+                            {
+                                "name": "survival",
+                                "quantity": 1
+                            }
+                        ],
+                        "number": 3
+                    }
+                ],
+                "items": [
+                    {
+                        "id": 1,
+                        "values": [
+                            {
+                                "name": "Rapière"
+                            },
+                            {
+                                "name": "Epée longue"
+                            },
+                            {
+                                "name": "Arme courante au choix"
+                            }
+                        ],
+                        "number": 1
+                    },
+                    {
+                        "id": 2,
+                        "values": [
+                            {
+                                "name": "Kit de diplomate"
+                            },
+                            {
+                                "name": "Kit d'artiste"
+                            }
+                        ],
+                        "number": 1
+                    },
+                    {
+                        "id": 3,
+                        "values": [
+                            {
+                                "name": "Luth"
+                            },
+                            {
+                                "name": "Autre instrument de musique"
+                            }
+                        ],
+                        "number": 1
+                    }
+                ],
+                "sub_class": []
+            }
+        },
+        {
+            "name": "Clerc",
+            "pv": {
+                "name": "health",
+                "quantity": 8
+            },
+            "dv": {
+                "name": "hit_dice",
+                "quantity": 8
+            },
+            "bonus_maitrise": {
+                "name": "mastering_bonus",
+                "quantity": 2
+            },
+            "maitrise": [
+                {
+                    "name": "Armure légère"
+                },
+                {
+                    "name": "Armure intermédiaire"
+                },
+                {
+                    "name": "Bouclier"
+                },
+                {
+                    "name": "Armes courantes"
+                }
+            ],
+            "sauvegarde": [
+                {
+                    "name": "wisdom"
+                },
+                {
+                    "name": "charisma"
+                }
+            ],
+            "features": [],
+            "items": [
+                {
+                    "name": "Symbole sacré"
+                },
+                {
+                    "name": "Bouclier"
+                }
+            ],
+            "choices": {
+                "skills": [
+                    {
+                        "id": 1,
+                        "values": [
+                            {
+                                "name": "history",
+                                "quantity": 1
+                            },
+                            {
+                                "name": "medicine",
+                                "quantity": 1
+                            },
+                            {
+                                "name": "persuasion",
+                                "quantity": 1
+                            },
+                            {
+                                "name": "religion",
+                                "quantity": 1
+                            },
+                            {
+                                "name": "insight",
+                                "quantity": 1
+                            }
+                        ],
+                        "number": 2
+                    }
+                ],
+                "items": [
+                    {
+                        "id": 1,
+                        "values": [
+                            {
+                                "name": "Masse d'armes"
+                            },
+                            {
+                                "name": "Marteau de guerre"
+                            }
+                        ],
+                        "number": 1
+                    },
+                    {
+                        "id": 2,
+                        "values": [
+                            {
+                                "name": "Armure de cuire"
+                            },
+                            {
+                                "name": "Armure d'écailles'"
+                            },
+                            {
+                                "name": "Cotte de mailles"
+                            }
+                        ],
+                        "number": 1
+                    },
+                    {
+                        "id": 3,
+                        "values": [
+                            {
+                                "name": "Arbalète légère et 20 carreaux"
+                            },
+                            {
+                                "name": "Arme courante au choix"
+                            }
+                        ],
+                        "number": 1
+                    },
+                    {
+                        "id": 4,
+                        "values": [
+                            {
+                                "name": "Kit d'explorateur"
+                            },
+                            {
+                                "name": "Kit d'ecclésiastique"
+                            }
+                        ],
+                        "number": 1
+                    }
+                ],
+                "sub_class": [
+                    {
+                        "id": 1,
+                        "values": [
+                            {
+                                "name": "Savoir"
+                            },
+                            {
+                                "name": "Lumière"
+                            },
+                            {
+                                "name": "Nature"
+                            },
+                            {
+                                "name": "Ruse"
+                            },
+                            {
+                                "name": "Tempête"
+                            },
+                            {
+                                "name": "Vie"
+                            },
+                            {
+                                "name": "Guerre"
+                            }
+                        ],
+                        "number": 1
+                    }
+                ]
+            }
+        }
+    ]
+}
