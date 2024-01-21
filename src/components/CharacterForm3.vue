@@ -31,14 +31,18 @@
 
 </template>
 
+
 <script setup>
 import { useStore } from 'vuex';
-import { ref } from 'vue';
+import { ref, defineEmits } from 'vue';
 import SimplifiedForm from './form3/SimplifiedForm.vue';
 import FreeForm from './form3/FreeForm.vue';
 //import ClassicForm from './form3/ClassicForm.vue';
 import {Form3} from '@/api/typeNew'
 import FormController from './FormController.vue';
+
+
+const emit = defineEmits(['next', 'previous'])
 
 const nav = ref("m-free");
 
