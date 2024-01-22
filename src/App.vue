@@ -100,7 +100,7 @@ const displayRace = (value) => {
     caracteristiques.value[carac] += parseInt(characteristics[carac])
   }
 }
-const step = ref(2);
+const step = ref(0);
 
 const updateCompetences = (oldCompetences, newCompetences) => {
   for (let comp in competences.value) {
