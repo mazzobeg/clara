@@ -1,11 +1,13 @@
 const state = () => ({
-    characterName : 'John Doe',
-    playerName : 'John Doe',
+    characterName : '',
+    playerName : '',
+    alignment : '',
 })
 
 const getters = {
     characterName : (state) => state.characterName,
-    playerName : (state) => state.playerName
+    playerName : (state) => state.playerName,
+    alignment : (state) => state.alignment,
 }
 
 const mutations = {
@@ -14,7 +16,10 @@ const mutations = {
     },
     setPlayerName(state, name) {
         state.playerName = name
-    }
+    },
+    setAlignment(state, alignment) {
+        state.alignment = alignment
+    },
 }
 
 export default {

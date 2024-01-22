@@ -37,7 +37,7 @@
             <div class="col-md">
                 <div class="input-group mb-3">
                     <span class="input-group-text" id="inputGroup-sizing-default">Alignement</span>
-                    <input disabled :placeholder="props.race" type="text" class="form-control"
+                    <input disabled :placeholder="store.getters['characterForm1/alignment']" type="text" class="form-control"
                         aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
                 </div>
             </div>
