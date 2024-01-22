@@ -48,7 +48,7 @@
                         "values": [
                             {
                                 "key": "hautElfe",
-                                "name": "Haut-elfe",
+                                "name": "hautElfe",
                                 "abilities": [
                                     {
                                         "name": "int",

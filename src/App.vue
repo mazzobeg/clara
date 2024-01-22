@@ -4,6 +4,10 @@
 
   <img class="mx-auto d-block" src="@/assets/header.png" alt="" srcset="" width="100" style="position: relative; bottom: 40px;">
 
+  <div class="container mb-3">
+      <button class="btn btn-outline-danger" @click="clearAllCookies">Tout supprimer</button>
+  </div>
+
   <div class="container">
     <div class="row">
       <div class="col-md-6">
@@ -11,11 +15,11 @@
           aria-valuemin="0" aria-valuemax="100" style="height: 20px">
           <div class="progress-bar" :style="`width: ${step / 3 * 100}%`"></div>
         </div>
-        <CharacterForm1 v-if="step === 0" @update:character-name="name => display(name)" @next="step++" />
-        <CharacterForm2 v-if="step === 1" @update:race="race => displayRace(race)" @next="step++" @previous="step--"
+        <CharacterForm1 v-if="step === 0" @update:character-name="name => display(name)" @next="store.commit('characterState/setStep',step + 1)" />
+        <CharacterForm2 v-if="step === 1" @update:race="race => displayRace(race)" @next="store.commit('characterState/setStep',step+1)" @previous="store.commit('characterState/setStep',step-1)"
           @update:classe="classe => displayClasse(classe)" />
-        <CharacterForm3 v-if="step === 2" @next="step++" @previous="step--" />
-        <CharacterForm4 v-if="step === 3" @next="step++" @previous="step--" />
+        <CharacterForm3 v-if="step === 2" @next="store.commit('characterState/setStep',step +1)" @previous="store.commit('characterState/setStep',step-1)" />
+        <CharacterForm4 v-if="step === 3" @previous="store.commit('characterState/setStep',step-1)" />
       </div>
       <div class="col-md-6 ps-md-5 mt-5 mt-md-0">
         <div class="bg-light border border-dark rounded" >
@@ -31,12 +35,16 @@
 <script setup>
 import CharacterForm1 from './components/CharacterForm1.vue';
 
-import { ref } from 'vue'
+import { ref , computed} from 'vue'
 import CharacterFile from './components/CharacterFile.vue'
 import CharacterForm2 from './components/CharacterForm2.vue';
 import CharacterForm3 from './components/CharacterForm3.vue';
 import CharacterForm4 from './components/CharacterForm4.vue';
 import data_races from '@/assets/race_lvl1.json'
+
+import Cookies from 'js-cookie'
+
+import { useStore, } from 'vuex';
 
 const caracteristiques = ref({
   "force": 0,
@@ -100,7 +108,10 @@ const displayRace = (value) => {
     caracteristiques.value[carac] += parseInt(characteristics[carac])
   }
 }
-const step = ref(0);
+
+const store = useStore();
+console.log(store.getters['characterState/step']);
+const step = computed(()=>store.getters['characterState/step']);
 
 const updateCompetences = (oldCompetences, newCompetences) => {
   for (let comp in competences.value) {
@@ -133,6 +144,15 @@ const displayClasse = (new_classe) => {
   classe_payload['équipements'] = JSON.parse(JSON.stringify(new_classe['équipements']));
   bonus_maitrise.value = parseInt(new_classe['bonus_maitrise']);
 
+}
+
+const clearAllCookies = () => {
+  Cookies.remove('characterForm1')
+  Cookies.remove('characterForm2')
+  Cookies.remove('characterForm3')
+  Cookies.remove('characterForm4')
+  Cookies.remove('characterState')
+  location.reload();
 }
 
 </script>

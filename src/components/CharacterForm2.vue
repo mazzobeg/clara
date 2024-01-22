@@ -39,7 +39,9 @@ const emit = defineEmits(['next', 'previous'])
 const store = useStore();
 
 // RACE HANDLING
-const storedRace = computed(() => store.getters['form2/raceState'])
+const storedRace = computed(() => {
+    return store.getters['form2/raceState']}
+    )
 
 const isRaceSubChoicesDisplayed = computed(() => {
     console.log("isRaceSubChoicesDisplayed", storedRace.value.choices)
@@ -47,7 +49,8 @@ const isRaceSubChoicesDisplayed = computed(() => {
 })
 
 const getRaceChoices = () => {
-    const choices = PROTOTYPE_RACES.find(bg => bg.key == storedRace.value.key) ? PROTOTYPE_RACES.find(bg => bg.key == storedRace.value.key).choices : []
+    const isKeyPresent = PROTOTYPE_RACES.find(bg => bg.key == storedRace.value.key)
+    const choices = isKeyPresent ? PROTOTYPE_RACES.find(bg => bg.key == storedRace.value.key).choices : []
     return choices
 }
 

@@ -99,7 +99,8 @@ const STUB = {
 
 const results = computed(() => {
     const storedForm3 = store.getters['form3/form3'];
-    if (storedForm3.mode == 'm-simple' || storedForm3.mode == 'm-classic') {
+    console.log("RESULTS", storedForm3);
+    if (storedForm3.mode == 'm-simple') {
         return JSON.parse(JSON.stringify(storedForm3.results));
     } else {
         return {
@@ -115,11 +116,17 @@ const results = computed(() => {
 
 const props = defineProps(['abilitiesValues']);
 const abilitiesValues = computed(() => {
+    console.log("ABILITIESVALUES", props.abilitiesValues);
     return props.abilitiesValues
 });
 
 const selectedGroup15 = computed(() => {
-    const entry = Object.entries(results.value).filter((entry) => entry[1] == abilitiesValues.value[0]);
+    console.log(results.value);
+    const entry = Object.entries(results.value).filter((entry) => {
+        console.log(entry);
+        return entry[1] == abilitiesValues.value[0]
+    });
+    console.log("SELECTEDGROUP15", entry);
     if (entry.length == 0) return '';
     return entry[0][0]
 });

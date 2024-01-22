@@ -4,16 +4,15 @@ import { PROTOTYPE as PROTOTYPE_CLASSES } from "@/api/models/class.js";
 import { Choices, Race, Class } from "@/api/typeNew";
 import { MODE } from "@/store/module/utils";
 
-const state = () => ({
-    raceState : {
-        key: 'default',
-        choices : {}
-    },
-    classState: {
-        key: 'default',
-        choices: []
-    },
-})
+import Cookies from 'js-cookie'
+
+const state = () => {
+    let form2 = Cookies.get('characterForm2') ? JSON.parse(Cookies.get('characterForm2')) : { raceState: { key: 'default', choices: {} }, classState: { key: 'default', choices: [] } };
+    return {
+        raceState : form2.raceState,
+        classState : form2.classState,
+    };
+}
 
 const getters = {
     raceState : (state) => state.raceState,
@@ -23,15 +22,19 @@ const getters = {
 const mutations = {
     setRaceStateKey: (state, key) => {
         state.raceState.key = key;
+        Cookies.set('characterForm2', JSON.stringify(state));
     },
     setRaceStateChoices: (state, choices) => {
         state.raceState.choices = choices;
+        Cookies.set('characterForm2', JSON.stringify(state));
     },
     setClassStateKey: (state, key) => {
         state.classState.key = key;
+        Cookies.set('characterForm2', JSON.stringify(state));
     },
     setClassStateChoices: (state, choices) => {
         state.classState.choices = choices;
+        Cookies.set('characterForm2', JSON.stringify(state));
     },
 }
 
@@ -66,7 +69,6 @@ const actions = {
         const preC = context.getters[rootGetState].choices
         preC instanceof Choices ? preC.digest(context, MODE.SUB) : null
         newC instanceof Choices ? newC.digest(context, MODE.ADD) : null
-    
         context.commit(rootSetChoice, newC);
     },
     updateClass: (context, newKey) => {

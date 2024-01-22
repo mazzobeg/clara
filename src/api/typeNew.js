@@ -196,7 +196,7 @@ class MetaChoice {
         const features = 'features' in json ? json.features.map(f => new Element(f.name)) : []
         const items = 'items' in json ? json.items.map(i => new Element(i.name)) : []
         const skills = 'skills' in json ? json.skills.map(i => new Quantity(i.name, i.quantity)) : []
-        const choices = 'choices' in json ? Choices.fromJson(json.choices) : new Choices([], [], [], [])
+        const choices = 'choices' in json ? Choices.fromJson(json.choices) : new Choices([], [], [], [], [])
         const abilities = 'abilities' in json ? json.abilities.map(a => new Quantity(a.name, a.quantity)) : []
         const spells = 'spells' in json ? json.spells.map(s => new Element(s.name)) : []
         return Object.assign(new type(), {

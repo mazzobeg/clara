@@ -44,7 +44,7 @@
             <div class="col-xl">
                 <div class="input-group mb-3">
                     <span class="input-group-text" id="inputGroup-sizing-default">Histoire</span>
-                    <input disabled :placeholder="props.characterName" type="text" class="form-control"
+                    <input disabled :placeholder="historicName" type="text" class="form-control"
                         aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
                 </div>
             </div>
@@ -136,7 +136,7 @@
 </template>
 
 <script setup>
-import { defineProps, computed } from 'vue'
+import { computed } from 'vue'
 import { useStore } from 'vuex'
 import ENUM from '@/api/enum.js'
 import skillsModule from '@/api/skills.js'
@@ -145,9 +145,13 @@ import { PROTOTYPE as PROTOTYPE_CLASS }  from '@/api/models/class'
 import { PROTOTYPE as PROTOTYPE_RACE }  from '@/api/models/race'
 import * as Utils  from '@/api/utils.js'
 
-const props = defineProps(['competences'])
 
 const store = useStore();
+
+const historicName = computed(() => {
+    return store.getters['form4/name']}
+    );
+
 const characterName = computed(() => store.getters['characterForm1/characterName'])
 const raceChoices = computed(() => store.getters['form2/raceState'])
 const raceLabel = computed(

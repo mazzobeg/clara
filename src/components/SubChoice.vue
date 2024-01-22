@@ -43,6 +43,8 @@ const nonEmptyChoices = computed(() => {
     for (const key in choices.value) {
         if (Array.isArray(choices.value[key]) && choices.value[key].length > 0) {
             result[key] = choices.value[key];
+        } else {
+            console.log("Remove", key, "from", choices.value);
         }
     }
     return result;
@@ -53,7 +55,7 @@ console.log("NON-EMPTY CHOICES", nonEmptyChoices.value);
 const emit = defineEmits(['update:choices'])
 
 const state = ref(props.state);
-console.log("STATE", state);
+console.log("STATE", state.value);
 
 const localState = ref(JSON.parse(JSON.stringify(state.value)));
 
